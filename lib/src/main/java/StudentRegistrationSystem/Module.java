@@ -17,6 +17,7 @@ public class Module {
        }
       
        public void addStudents(Student student) {
+    	  student.addModule(this);
           this.students.add(student);
        }
       

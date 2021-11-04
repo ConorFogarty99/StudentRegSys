@@ -25,6 +25,16 @@ public class Student {
         this.modules = new ArrayList<Module>();
         this.courses = new ArrayList<CourseProgramme>();
     }
+    
+    public Student(String name, DateTime dob, ArrayList<CourseProgramme> course, ArrayList<Module> module){
+        this.setName(name);
+        this.setDob(dob);
+        this.age = new Period(dob, now).getYears();
+        Student.numStudents++;
+        this.ID = Student.numStudents;
+        this.modules = new ArrayList<Module>();
+        this.courses = new ArrayList<CourseProgramme>();
+    }
    
     //Getting the Username of the student
     //Removing whitespace in Username

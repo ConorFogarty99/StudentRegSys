@@ -42,7 +42,7 @@ public class StudentTest {
         courses.add(course2);
         courses.add(course3);
         
-        s1 = new Student("Conor Fogarty", new DateTime(1999, 7, 15 ,0 , 0 , 0 ));
+        s1 = new Student("Conor Fogarty", new DateTime(1999, 7, 15 ,0 , 0 , 0 ), courses, modules);
         //System.out.println(s1.ToString());
     }
    
