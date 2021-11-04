@@ -7,13 +7,13 @@ import org.junit.Test;
  
 public class ModuleTest {
                
-                Module testModule;
+    Module testModule;
     ArrayList<Student> students;
     ArrayList<CourseProgramme> courses;
    
     public ModuleTest() {
-                students = new ArrayList<>(3);
-                courses = new ArrayList<>(3);
+        students = new ArrayList<>(3);
+        courses = new ArrayList<>(3);
  
         Student conorF = new Student("Conor Fogarty", new DateTime(1999, 7, 15 ,0 , 0 , 0 ));
         Student seanF = new Student("Sean Fogarty", new DateTime(1997, 7, 12 ,0 , 0 , 0 ));
@@ -24,23 +24,17 @@ public class ModuleTest {
         students.add(seanF);
         students.add(kelanF);
        
-        DateTime start = new DateTime(2021, 9, 01 ,0 , 0 , 0 );;
+        DateTime start = new DateTime(2021, 9, 01 ,0 , 0 , 0 );
         DateTime end = new DateTime(2022, 5, 19 ,0 , 0 , 0 );
         CourseProgramme course1 = new CourseProgramme("Computer Science", start, end);
-       
-        start = new DateTime(2021, 9, 01 ,0 , 0 , 0 );;
-        end = new DateTime(2021, 12, 17 ,0 , 0 , 0 );
         CourseProgramme course2 = new CourseProgramme("Mechanical Engineering", start, end);
-       
-        start = new DateTime(2021, 9, 01 ,0 , 0 , 0 );
-        end = new DateTime(2022, 5, 19 ,0 , 0 , 0 );
         CourseProgramme course3 = new CourseProgramme("General Science", start, end);
        
         courses.add(course1);
         courses.add(course2);
         courses.add(course3);
        
-        testModule = new Module("CT401", "001");
+        testModule = new Module("CT401", "001", students, courses);
         //System.out.println(testModule.ToString());
     }
  

@@ -32,8 +32,8 @@ public class Student {
         this.age = new Period(dob, now).getYears();
         Student.numStudents++;
         this.ID = Student.numStudents;
-        this.modules = new ArrayList<Module>();
-        this.courses = new ArrayList<CourseProgramme>();
+        this.modules = module;
+        this.courses = course;
     }
    
     //Getting the Username of the student

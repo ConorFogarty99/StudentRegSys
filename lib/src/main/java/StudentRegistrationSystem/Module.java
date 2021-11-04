@@ -8,16 +8,24 @@ public class Module {
    	private ArrayList<Student> students;
    	private ArrayList<CourseProgramme> courses;
   
-   //Constructors
+   		//Constructors
        public Module(String name, String ID){
           this.setName(name);
           this.setID(ID);
           this.students = new ArrayList<Student>();
           this.courses = new ArrayList<CourseProgramme>();
        }
+       
+       public Module(String name, String ID, ArrayList<Student> students, ArrayList<CourseProgramme> courses){
+           this.setName(name);
+           this.setID(ID);
+           this.students = students;
+           this.courses = courses;
+        }
       
        public void addStudents(Student student) {
     	  student.addModule(this);
+    	  System.out.println(student.ToString());
           this.students.add(student);
        }
       

@@ -20,6 +20,16 @@ public class CourseProgramme {
             this.students = new ArrayList<Student>();
             this.modules = new ArrayList<Module>();
         }
+        
+        public CourseProgramme(String name, DateTime startDate, DateTime endDate, ArrayList<Module> modules, ArrayList<Student> students) {
+            this.setName(name);
+            this.setModules(modules);
+            this.setStudents(students);
+            this.setStartDate(startDate);
+            this.setEndDate(endDate);
+            this.students = students;
+            this.modules = modules;
+        }
                
         public void addStudents(Student student) {
                         this.students.add(student);

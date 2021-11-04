@@ -9,7 +9,7 @@ import org.junit.Test;
  
 public class CourseProgrammeTest {
                
-                CourseProgramme testCourse;
+    CourseProgramme testCourse;
     Module testModule;
     Student testStudent;
     ArrayList<Student> students;
@@ -25,21 +25,21 @@ public class CourseProgrammeTest {
         Student seanF = new Student("Sean Fogarty", new DateTime(1997, 7, 12 ,0 , 0 , 0 ));
         Student kelanF = new Student("Kelan Fogarty", new DateTime(2001, 1, 31 ,0 , 0 , 0 ));
        
-        Module module1 = new Module("CT401", "001");
-        Module module2 = new Module("CT402", "002");
-        Module module3 = new Module("CT403", "003");
+        Module m1 = new Module("CT401", "001");
+        Module m2 = new Module("CT402", "002");
+        Module m3 = new Module("CT403", "003");
        
         students.add(conorF);
         students.add(seanF);
         students.add(kelanF);
        
-        modules.add(module1);
-        modules.add(module2);
-        modules.add(module3);     
+        modules.add(m1);
+        modules.add(m2);
+        modules.add(m3);     
         
         start = new DateTime(2021, 9, 01 ,0 , 0 , 0 );
         end = new DateTime(2022, 5, 19 ,0 , 0 , 0 );
-        testCourse = new CourseProgramme("Computer Science", start, end);
+        testCourse = new CourseProgramme("Computer Science", start, end, modules, students);
         testModule = new Module("CT400", "001");
        
         System.out.println(testCourse.ToString());
