@@ -35,7 +35,7 @@ public class ModuleTest {
         courses.add(course3);
        
         testModule = new Module("CT401", "001", students, courses);
-        //System.out.println(testModule.ToString());
+        System.out.println(testModule.toString());
     }
  
     // Testing get/set name

@@ -25,7 +25,6 @@ public class Module {
       
        public void addStudents(Student student) {
     	  student.addModule(this);
-    	  System.out.println(student.ToString());
           this.students.add(student);
        }
       
