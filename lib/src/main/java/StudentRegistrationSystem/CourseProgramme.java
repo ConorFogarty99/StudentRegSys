@@ -87,7 +87,7 @@ public class CourseProgramme {
       		   moduleStr += "| " + modules.get(i).getName() + " |\t";
       	   	}
         	for(int i=0; i< students.size(); i++) {
-       		   studentStr += "| " + modules.get(i).getName() + " |\t";
+       		   studentStr += "| " + students.get(i).getName() + " |\t";
        	   	}
              return "Course: " + getName() + "\n" + "Modules: " + moduleStr + "\n" + "Students: " + studentStr + "\n"
                             + "Start Date: " + getStartDate() + "\n" + "End Date: " + getEndDate() + "\n";
