@@ -106,12 +106,17 @@ public class Student {
                
     public String ToString() {
     	String moduleStr = " ";
+    	String courseStr = " ";
  	   for(int i=0; i< modules.size(); i++) {
- 		   moduleStr += modules.get(i).getName() + " ";
+ 		   moduleStr += "| " + modules.get(i).getName() + " |\t";
  	   }
  	   
+ 	  for(int i=0; i< courses.size(); i++) {
+		   courseStr += "| " + courses.get(i).getName() + " |";
+	   }
+ 	   
     	return "Student: " + getName() + "\n" + "Age: " + getAge() + "\n" + "ID: " + getID() + "\n" +
-        "DOB: " + getDob() + "\n" + "Username: " + getUsername() + "\n" + "Courses: " + getCourse() + "\n" + 
+        "DOB: " + getDob() + "\n" + "Username: " + getUsername() + "\n" + "Courses: " + courseStr + "\n" + 
     			"Modules: " + moduleStr + "\n";
     }
    

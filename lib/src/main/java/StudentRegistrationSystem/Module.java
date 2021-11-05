@@ -66,11 +66,16 @@ public class Module {
       
        public String toString() {
     	   String studentStr = " ";
+    	   String courseStr = " ";
     	   for(int i=0; i< students.size(); i++) {
-    		   studentStr += students.get(i).getName() + " ";
+    		   studentStr += "| " + students.get(i).getName() + " |";
+    	   }
+    	   
+    	   for(int i=0; i< courses.size(); i++) {
+    		   courseStr += "| " + courses.get(i).getName() + " |";
     	   }
     	   
            return "Module: " + getName() + "\n" + "ID: " + getID() + "\n" + "Students: " + studentStr + 
-            		  "\n" + "Courses: " + getCourses() + "\n";
+            		  "\n" + "Courses: " + courseStr + "\n";
        }
 }
