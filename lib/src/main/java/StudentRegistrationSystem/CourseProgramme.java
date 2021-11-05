@@ -32,51 +32,52 @@ public class CourseProgramme {
         }
                
         public void addStudents(Student student) {
-                        this.students.add(student);
+        	this.students.add(student);
         }
        
-        public void addModule(Module modules) {
-                        this.modules.add(modules);
+        public void addModule(Module module) {
+        	module.addCourse(this);
+        	this.modules.add(module);
         }
                
         public String getName() {
-                        return name;
+        	return name;
         }
  
         public void setName(String name) {
-                        this.name = name;
+        	this.name = name;
         }
  
         public ArrayList<Module> getModules() {
-                        return modules;
+        	return modules;
         }
  
         public void setModules(ArrayList<Module> modules) {
-                        this.modules = modules;
+        	this.modules = modules;
         }
  
         public ArrayList<Student> getStudents() {
-                        return students;
+        	return students;
         }
  
         public void setStudents(ArrayList<Student> students) {
-                        this.students = students;
+        	this.students = students;
         }
  
         public DateTime getStartDate() {
-                        return startDate;
+        	return startDate;
         }
  
         public void setStartDate(DateTime startDate) {
-                        this.startDate = startDate;
+        	this.startDate = startDate;
         }
  
         public DateTime getEndDate() {
-                        return endDate;
+        	return endDate;
         }
  
         public void setEndDate(DateTime endDate) {
-                        this.endDate = endDate;
+        	this.endDate = endDate;
         }
                
         public String ToString() {
