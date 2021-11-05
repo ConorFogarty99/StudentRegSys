@@ -49,7 +49,6 @@ public class Student {
     }
                
     public void addModule(Module modules) {
-    	System.out.println("Running");
         this.modules.add(modules);
     }
  

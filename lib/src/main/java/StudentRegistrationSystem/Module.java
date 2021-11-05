@@ -66,6 +66,12 @@ public class Module {
        }
       
        public String toString() {
-              return "Module: " + getName() + "\n" + "ID: " + getID() + "\n" + "Students: " + getStudents() + "\n" + "Courses: " + getCourses() + "\n";
-   }
+    	   String studentStr = " ";
+    	   for(int i=0; i< students.size(); i++) {
+    		   studentStr += students.get(i).getName() + " ";
+    	   }
+    	   
+           return "Module: " + getName() + "\n" + "ID: " + getID() + "\n" + "Students: " + studentStr + 
+            		  "\n" + "Courses: " + getCourses() + "\n";
+       }
 }

@@ -15,14 +15,14 @@ public class ModuleTest {
         students = new ArrayList<>(3);
         courses = new ArrayList<>(3);
  
-        Student conorF = new Student("Conor Fogarty", new DateTime(1999, 7, 15 ,0 , 0 , 0 ));
-        Student seanF = new Student("Sean Fogarty", new DateTime(1997, 7, 12 ,0 , 0 , 0 ));
-        Student kelanF = new Student("Kelan Fogarty", new DateTime(2001, 1, 31 ,0 , 0 , 0 ));
+        Student s1 = new Student("Conor Fogarty", new DateTime(1999, 7, 15 ,0 , 0 , 0 ));
+        Student s2 = new Student("Sean Fogarty", new DateTime(1997, 7, 12 ,0 , 0 , 0 ));
+        Student s3 = new Student("Kelan Fogarty", new DateTime(2001, 1, 31 ,0 , 0 , 0 ));
  
        
-        students.add(conorF);
-        students.add(seanF);
-        students.add(kelanF);
+        students.add(s1);
+        students.add(s2);
+        students.add(s3);
        
         DateTime start = new DateTime(2021, 9, 01 ,0 , 0 , 0 );
         DateTime end = new DateTime(2022, 5, 19 ,0 , 0 , 0 );
@@ -78,10 +78,10 @@ public class ModuleTest {
     // Testing addStudent method
     @Test
     public void testAddStudents() {
-                //System.out.println(testModule.ToString());
-                students.remove(0); //Remove conorF
-                Student conorF = new Student("Conor Fogarty", new DateTime(1999, 7, 15 ,0 , 0 , 0 ));
-                testModule.addStudents(conorF); //add conorF back through addStudent method
+        //System.out.println(testModule.ToString());
+        students.remove(0); //Remove s1
+        Student s1 = new Student("Conor Fogarty", new DateTime(1999, 7, 15 ,0 , 0 , 0 ));
+        testModule.addStudents(s1); //add s1 back through addStudent method
         assertEquals(testModule.getStudents(), students);
     }
    
@@ -89,12 +89,12 @@ public class ModuleTest {
     @Test
     public void testAddCourse() {
         //System.out.println(testModule.ToString());
-        courses.remove(0); //Remove conorF
+        courses.remove(0); //Remove s1
                
         DateTime start = DateTime.parse("2021-09-01");
         DateTime end = DateTime.parse("2022-05-19");
         CourseProgramme course1 = new CourseProgramme("Computer Science", start, end);
-        testModule.addCourse(course1); //add conorF back through addStudent method
+        testModule.addCourse(course1); //add s1 back through addStudent method
         assertEquals(testModule.getStudents(), students);
     }
  
