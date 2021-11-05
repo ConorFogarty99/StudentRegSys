@@ -88,13 +88,13 @@ public class ModuleTest {
     // Testing addCourse method
     @Test
     public void testAddCourse() {
-                //System.out.println(testModule.ToString());
-                courses.remove(0); //Remove conorF
+        //System.out.println(testModule.ToString());
+        courses.remove(0); //Remove conorF
                
-                DateTime start = DateTime.parse("2021-09-01");
+        DateTime start = DateTime.parse("2021-09-01");
         DateTime end = DateTime.parse("2022-05-19");
-                CourseProgramme course1 = new CourseProgramme("Computer Science", start, end);
-                testModule.addCourse(course1); //add conorF back through addStudent method
+        CourseProgramme course1 = new CourseProgramme("Computer Science", start, end);
+        testModule.addCourse(course1); //add conorF back through addStudent method
         assertEquals(testModule.getStudents(), students);
     }
  

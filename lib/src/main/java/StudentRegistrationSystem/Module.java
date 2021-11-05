@@ -65,7 +65,7 @@ public class Module {
           this.courses = courses;
        }
       
-       public String ToString() {
+       public String toString() {
               return "Module: " + getName() + "\n" + "ID: " + getID() + "\n" + "Students: " + getStudents() + "\n" + "Courses: " + getCourses() + "\n";
    }
 }
