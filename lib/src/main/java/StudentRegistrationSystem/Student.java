@@ -45,6 +45,7 @@ public class Student {
     }
    
     public void addCourse(CourseProgramme course) {
+    	course.addStudents(this);
     	this.courses.add(course);
     }
                
