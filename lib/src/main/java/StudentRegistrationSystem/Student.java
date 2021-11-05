@@ -105,9 +105,14 @@ public class Student {
     }
                
     public String ToString() {
+    	String moduleStr = " ";
+ 	   for(int i=0; i< modules.size(); i++) {
+ 		   moduleStr += modules.get(i).getName() + " ";
+ 	   }
+ 	   
     	return "Student: " + getName() + "\n" + "Age: " + getAge() + "\n" + "ID: " + getID() + "\n" +
         "DOB: " + getDob() + "\n" + "Username: " + getUsername() + "\n" + "Courses: " + getCourse() + "\n" + 
-    			"Modules: " + getModules() + "\n";
+    			"Modules: " + moduleStr + "\n";
     }
    
 }
